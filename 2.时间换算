@@ -1,0 +1,10 @@
+//2．编写程序，把560分钟换算成用小时和分钟表示(如70分钟换算之后为1小时10分钟)，并输出结果。
+#include<stdio.h>
+int main()
+{
+	int hour, minute, time=560;
+	hour = time / 60;
+	minute = time % 60;
+	printf("560分钟换算之后为%d小时%d分钟\n", hour, minute);
+	return 0;
+}
