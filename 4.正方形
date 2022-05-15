@@ -1,0 +1,12 @@
+//4．编写程序，求边长为5的正方形的周长和面积，并输出结果。
+#include<stdio.h>
+int main()
+{
+	int a, c, s;
+	a = 5;
+	c = 4 * a;
+	s = a * a;
+	printf("周长：%d\n", c);
+	printf("面积：%d\n", s);
+	return 0;
+}
