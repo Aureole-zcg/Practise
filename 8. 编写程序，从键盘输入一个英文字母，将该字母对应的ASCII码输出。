@@ -1,0 +1,13 @@
+//8. 编写程序，从键盘输入一个英文字母，将该字母对应的ASCII码输出。
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("从键盘输入一个英文字母:");
+	scanf("%c", &ch);
+	if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+		printf("该字母对应的ASCII码:%d\n", ch);
+	else
+		printf("输入有误！\n");
+	return 0;
+}
