@@ -1,0 +1,13 @@
+//10. 编写程序，输入两个数，按由大到小的顺序输出这两个数。
+#include<stdio.h>
+int main()
+{
+	double a, b;
+	printf("请输入两个数：");
+	scanf("%lf%lf", &a, &b);
+	if (a > b)
+		printf("由大到小的顺序为:%lf>%lf\n", a, b);
+	else
+		printf("由大到小的顺序为:%lf>%lf\n", b, a);
+	return 0;
+}
