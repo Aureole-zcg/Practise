@@ -1,0 +1,13 @@
+//14．编写程序，输入一个正整数，判断其是否能被5和7同时整除，并输出结果。
+#include<stdio.h>
+int main()
+{
+	int x;
+	printf("请输入一个正整数:");
+	scanf("%d", &x);
+	if (x % 5 == 0 && x % 7 == 0)
+		printf("%d能被5和7同时整除\n",x);
+	else
+		printf("%d不能同时被5和7整除\n",x);
+	return 0;
+}
