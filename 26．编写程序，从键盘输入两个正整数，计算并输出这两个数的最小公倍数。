@@ -1,0 +1,23 @@
+//26．编写程序，从键盘输入两个正整数，计算并输出这两个数的最小公倍数。
+#include<stdio.h>
+int main()
+{
+	int m, n, p, temp;
+	printf("请输入两个正整数:");
+	scanf("%d%d", &m, &n);
+	p = m * n;
+	if (m < n)
+	{
+		temp = m;
+		m = n;
+		n = temp;
+	}
+	while (n != 0)
+	{
+		temp = m % n;
+		m = n;
+		n = temp;
+	}
+	printf("这两个数的最小公倍数为:%d\n", p / m);
+	return 0;
+}
