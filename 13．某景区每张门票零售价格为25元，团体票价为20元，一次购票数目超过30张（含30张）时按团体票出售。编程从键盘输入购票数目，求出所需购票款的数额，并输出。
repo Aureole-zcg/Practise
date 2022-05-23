@@ -1,0 +1,19 @@
+//13．某景区每张门票零售价格为25元，团体票价为20元，一次购票数目超过30张（含30张）时按团体票出售。编程从键盘输入购票数目，求出所需购票款的数额，并输出。
+#include<stdio.h>
+int main()
+{
+	int ling = 25, tuan = 20, p, money;
+	printf("请输入购票数目:");
+	scanf("%d", &p);
+	if (p >= 0)
+	{
+		if (p >= 30)
+			money = p * tuan;
+		else
+			money = p * ling;
+		printf("所需购票金额为:%d\n", money);
+	}
+	else
+		printf("输入有误！\n");
+	return 0;
+}

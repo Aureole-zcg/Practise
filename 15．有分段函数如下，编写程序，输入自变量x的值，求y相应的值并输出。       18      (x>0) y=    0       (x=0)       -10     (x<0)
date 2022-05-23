@@ -1,0 +1,24 @@
+/*15．有分段函数如下，编写程序，输入自变量x的值，求y相应的值并输出。
+      18      (x>0)
+y=    0       (x=0)
+      -10     (x<0)
+*/
+#include<stdio.h>
+int main()
+{
+    double x;
+    int y;
+    printf("请输入自变量x的值:");
+    scanf("%lf", &x);
+    if (x > 0)
+        y = 18;
+    else
+    {
+        if (x == 0)
+            y = 0;
+        else
+            y = -10;
+    }
+    printf("y=%d\n", y);
+    return 0;
+}

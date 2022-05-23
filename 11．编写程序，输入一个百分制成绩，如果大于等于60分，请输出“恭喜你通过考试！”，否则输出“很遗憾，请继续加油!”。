@@ -1,0 +1,18 @@
+//11．编写程序，输入一个百分制成绩，如果大于等于60分，请输出“恭喜你通过考试！”，否则输出“很遗憾，请继续加油!”。
+#include<stdio.h>
+int main()
+{
+	double a;
+	printf("请输入一个百分制成绩:");
+	scanf("%lf", &a);
+	if (a <= 100&&a>=0)
+	{
+		if (a >= 60)
+			printf("恭喜你通过考试！\n");
+		else
+			printf("很遗憾，请继续加油!\n");
+	}
+	else
+		printf("输入有误！\n");
+	return 0;
+}

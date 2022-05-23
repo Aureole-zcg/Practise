@@ -1,0 +1,11 @@
+//21．编写程序，求1+1/2+1/3+1/4+…+1/99+1/100的值并输出，小数点后保留四位数字。
+#include<stdio.h>
+int main()
+{
+	int i;
+	float sum = 0.0f;
+	for (i = 1; i <= 100; i++)
+		sum = sum + 1.0f / i;
+	printf("和等于%.4f\n", sum);
+	return 0;
+}

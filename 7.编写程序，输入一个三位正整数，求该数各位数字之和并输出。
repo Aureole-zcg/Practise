@@ -1,0 +1,13 @@
+//7.编写程序，输入一个三位正整数，求该数各位数字之和并输出。
+#include<stdio.h>
+int main()
+{
+	int a, gw, sw, bw;
+	printf("请输入一个三位正整数：");
+	scanf("%d", &a);
+	gw = a % 10;
+	sw = a / 10 % 10;
+	bw = a / 100;
+	printf("该数各位数字之和：%d+%d+%d=%d\n", bw, sw, gw, gw + sw + bw);
+	return 0;
+}

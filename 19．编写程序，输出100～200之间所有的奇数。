@@ -1,0 +1,11 @@
+//19．编写程序，输出100～200之间所有的奇数。
+#include<stdio.h>
+int main()
+{
+	int i;
+	printf("100～200之间所有的奇数为:");
+	for (i = 101; i < 200; i += 2)
+		printf("%5d", i);
+	printf("\n");
+	return 0;
+}
